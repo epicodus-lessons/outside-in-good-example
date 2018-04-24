@@ -40,3 +40,33 @@ html * {
   height: 200px;
   background-color: lightSalmon;
 }
+
+/* TABLET RULES */
+
+/*landscape*/
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .content-big {
+    background-color: lightCoral;
+  }
+}
+
+/*portrait*/
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 600px;
+  }
+}
+
+/* MOBILE RULES */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 400px;
+    padding: 0;
+  }
+}
