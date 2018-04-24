@@ -12,32 +12,36 @@ body {
 }
 
 html * {
-  border: 4px solid lightSeaGreen;
+  border: 3px solid lightSeaGreen;
 }
 
 .header {
-  min-width: 100%;
-  height: 100px;
   background-color: lightPink;
+  height: 100px;
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
+  width: 1200px;
 }
 
 .content {
+  height: 400px;
   margin-bottom: 30px;
+  width: 100%;
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: row;
 }
 
 .content-big {
-  height: 400px;
   background-color: lightSkyBlue;
 }
 
 .content-small {
-  height: 200px;
   background-color: lightSalmon;
 }
 
@@ -52,6 +56,13 @@ html * {
   .content-big {
     background-color: lightCoral;
   }
+  .content-grid {
+    flex-direction: column;
+  }
+  .content-small {
+    height: 200px;
+    background-color: lightCyan;
+  }
 }
 
 /*portrait*/
@@ -59,6 +70,17 @@ html * {
 @media screen and (max-width: 900px) {
   .container {
     width: 600px;
+  }
+  .content-big {
+    background-color: lavenderBlush;
+    height: 500px;
+  }
+  .content-grid {
+    flex-direction: column;
+  }
+  .content-small {
+    height: 300px;
+    background-color: paleGreen;
   }
 }
 
@@ -68,5 +90,17 @@ html * {
   .container {
     width: 400px;
     padding: 0;
+  }
+
+  .content-big {
+    background-color: paleVioletRed;
+    height: 500px;
+  }
+  .content-grid {
+    flex-direction: column;
+  }
+  .content-small {
+    height: 300px;
+    background-color: mistyRose;
   }
 }
