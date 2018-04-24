@@ -11,7 +11,7 @@ body {
   min-width: 100vw;
 }
 
-html * {
+* {
   border: 3px solid lightSeaGreen;
 }
 
