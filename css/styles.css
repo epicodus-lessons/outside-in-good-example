@@ -26,22 +26,18 @@ body {
 }
 
 .content {
-  height: 400px;
   margin-bottom: 30px;
   display: block;
 }
 
-.content-grid {
-  display: flex;
-  flex-direction: row;
-}
-
 .content-big {
   background-color: lightSkyBlue;
+  height: 400px;
 }
 
 .content-small {
   background-color: lightSalmon;
+  height: 200px;
 }
 
 /* TABLET RULES */
@@ -55,11 +51,7 @@ body {
   .content-big {
     background-color: lightCoral;
   }
-  .content-grid {
-    flex-direction: column;
-  }
   .content-small {
-    height: 200px;
     background-color: lightCyan;
   }
 }
@@ -73,9 +65,6 @@ body {
   .content-big {
     background-color: lavenderBlush;
     height: 500px;
-  }
-  .content-grid {
-    flex-direction: column;
   }
   .content-small {
     height: 300px;
@@ -94,9 +83,6 @@ body {
   .content-big {
     background-color: paleVioletRed;
     height: 500px;
-  }
-  .content-grid {
-    flex-direction: column;
   }
   .content-small {
     height: 300px;
