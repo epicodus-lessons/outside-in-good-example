@@ -4,16 +4,13 @@ html {
 }
 
 *, *:before, *:after {
+  border: 3px solid lightSeaGreen;
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
-}
-
-* {
-  border: 3px solid lightSeaGreen;
 }
 
 .header {
@@ -23,8 +20,8 @@ body {
 }
 
 .header h1 {
+  font-size: 110px;
   margin: 0;
-  font-size: 120px;
 }
 
 .container {
@@ -35,7 +32,6 @@ body {
 
 .content {
   margin-bottom: 30px;
-  display: block;
 }
 
 .content-big {
@@ -45,7 +41,9 @@ body {
 
 .content-small {
   background-color: lightSalmon;
-  height: 150px;
+  display: inline-block;
+  height: 400px;
+  width: 294px;
 }
 
 /* TABLET RULES */
@@ -56,7 +54,7 @@ body {
   .container {
     width: 950px;
   }
-  
+
   .header h1 {
     font-size: 90px;
   }
@@ -68,6 +66,9 @@ body {
 
   .content-small {
     background-color: lightCyan;
+    height: 200px;
+    height: 350px;
+    width: 417px;
   }
 }
 
@@ -76,7 +77,7 @@ body {
 @media screen and (max-width: 950px) {
   .container {
     width: 650px;
-    padding: 0 20px;
+    padding: 0 25px;
   }
 
   .content-big {
@@ -85,8 +86,10 @@ body {
   }
 
   .content-small {
-    height: 200px;
     background-color: paleGreen;
+    display: block;
+    height: 200px;
+    width: inherit;
   }
 }
 
@@ -94,8 +97,8 @@ body {
 
 @media screen and (max-width: 650px) {
   .container {
-    width: 400px;
-    padding: 0;
+    width: 380px;
+    padding: 0 15px;
   }
 
   .header {
