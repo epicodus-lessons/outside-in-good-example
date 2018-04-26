@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -16,13 +18,19 @@ body {
 
 .header {
   background-color: lightPink;
-  height: 100px;
+  height: 120px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 120px;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 50px;
-  width: 1200px;
+  width: 1300px;
 }
 
 .content {
@@ -37,20 +45,27 @@ body {
 
 .content-small {
   background-color: lightSalmon;
-  height: 200px;
+  height: 150px;
 }
 
 /* TABLET RULES */
 
 /*landscape*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .container {
-    width: 900px;
+    width: 950px;
   }
+  
+  .header h1 {
+    font-size: 90px;
+  }
+
   .content-big {
+    height: 500px;
     background-color: lightCoral;
   }
+
   .content-small {
     background-color: lightCyan;
   }
@@ -58,32 +73,44 @@ body {
 
 /*portrait*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .container {
-    width: 600px;
+    width: 650px;
+    padding: 0 20px;
   }
+
   .content-big {
     background-color: lavenderBlush;
-    height: 500px;
+    height: 600px;
   }
+
   .content-small {
-    height: 300px;
+    height: 200px;
     background-color: paleGreen;
   }
 }
 
 /* MOBILE RULES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .container {
     width: 400px;
     padding: 0;
   }
 
+  .header {
+    height: 80px;
+  }
+
+  .header h1 {
+    font-size: 55px;
+  }
+
   .content-big {
     background-color: paleVioletRed;
-    height: 500px;
+    height: 800px;
   }
+
   .content-small {
     height: 300px;
     background-color: mistyRose;
