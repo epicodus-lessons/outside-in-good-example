@@ -1,6 +1,8 @@
+/*SETTING UP THE GENERAL OUTLINE FOR THE SITE'S LARGER STRUCTURE*/
+
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 *, *:before, *:after {
@@ -13,21 +15,28 @@ body {
   padding: 0;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  width: 1300px; /* this value is ok... using px values to set container widths is accepte practice*/
+}
+
+/* WRITING RULES THAT NEED TO BE APPLIED GENERALLY TO USE A SHARED CLASS RATHER THAN WRITING THEM OVER AND OVER */
+
+.text-center {
+  text-align: center;
+}
+
+/* MOVING ON TO INDIVIDUAL SECTIONS MOVING INTO EACH FROM PARENT TO CHILDREN */
+
 .header {
   background-color: lightPink;
   height: 120px;
-  text-align: center;
 }
 
 .header h1 {
   font-size: 110px;
   margin: 0;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 50px;
-  width: 1300px;
 }
 
 .content {
@@ -39,83 +48,14 @@ body {
   height: 400px;
 }
 
+.content-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
 .content-small {
   background-color: lightSalmon;
-  display: inline-block;
   height: 400px;
-  width: 294px;
-}
-
-/* TABLET RULES */
-
-/*landscape*/
-
-@media screen and (max-width: 1300px) {
-  .container {
-    width: 950px;
-  }
-
-  .header h1 {
-    font-size: 90px;
-  }
-
-  .content-big {
-    height: 500px;
-    background-color: lightCoral;
-  }
-
-  .content-small {
-    background-color: lightCyan;
-    height: 200px;
-    height: 350px;
-    width: 417px;
-  }
-}
-
-/*portrait*/
-
-@media screen and (max-width: 950px) {
-  .container {
-    width: 650px;
-    padding: 0 25px;
-  }
-
-  .content-big {
-    background-color: lavenderBlush;
-    height: 600px;
-  }
-
-  .content-small {
-    background-color: paleGreen;
-    display: block;
-    height: 200px;
-    width: inherit;
-  }
-}
-
-/* MOBILE RULES */
-
-@media screen and (max-width: 650px) {
-  .container {
-    width: 380px;
-    padding: 0 15px;
-  }
-
-  .header {
-    height: 80px;
-  }
-
-  .header h1 {
-    font-size: 55px;
-  }
-
-  .content-big {
-    background-color: paleVioletRed;
-    height: 900px;
-  }
-
-  .content-small {
-    height: 300px;
-    background-color: mistyRose;
-  }
+  padding: 0 10px;
+  width: 24.5%;
 }
