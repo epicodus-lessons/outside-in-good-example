@@ -6,8 +6,8 @@ html {
 }
 
 *, *:before, *:after {
-  border: 3px solid lightSeaGreen;
   box-sizing: inherit;
+  border: 3px solid lightSeaGreen;
 }
 
 body {
